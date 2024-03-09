@@ -1,0 +1,309 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url("https://fonts.cdnfonts.com/css/cartoon-free");
+
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    /* font-family: "Madimi One", sans-serif; */
+    font-family: 'CARTOON FREE', sans-serif;
+    background-image: url("7c253decec25ca082a8d6dacb22fab67.mp4");
+    /* box-sizing: border-box;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+    background: linear-gradient(315deg , #FC819E, #F7418F 74%); */
+    
+}
+
+.wrapper{
+    width: 1024px;
+    margin: 10px;
+    padding: 40px;
+}
+
+/* .wrapper .button{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 0 5px;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-out; */
+}
+/* 
+.wrapper .button .icon{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1):hover .icon{
+    background: #a78faa;
+}
+.wrapper .button:nth-child(2):hover .icon{
+    background: #a78faa;
+}
+.wrapper .button:nth-child(3):hover .icon{
+    background: #a78faa;
+}
+.wrapper .button .icon{
+    font-size: 25px;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icon{
+    color:#fff;
+}
+.wrapper .button span{
+    font-size: 20px;
+    font-weight: 50px;
+    line-height: 60px;
+    margin-left: 10px;
+    transition: all 0.3s ease-out; */
+}
+/* .wrapper .button:nth-child(1)span{
+    background: #a78faa;
+}
+.wrapper .button:nth-child(2)span{
+    background: #a78faa; */
+}
+/* .wrapper .button:nth-child(3)span{
+    background: #a78faa;
+    -webkit-text-stroke: 0.6px #453347;
+} */
+
+.sosmed{
+    color: white;
+    font-size: 20px;
+}
+.icon{
+    color: #fff;
+    text-decoration: none;
+    -webkit-text-stroke: 0.6px #453347;
+    font-size: 2rem;
+}
+.icon:hover{
+    color: #453347;
+}
+/*
+* menu
+*/
+
+nav {
+    background-color: #453347;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    /* unpad */
+    display: flex;
+    justify-content: space-between;
+}
+
+/* nav .logo{
+    font-family: 'CARTOON FREE', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+} */
+
+
+nav > .wrapper{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    align-items: center;
+    
+}
+
+
+.menu {
+    width: 50%;
+    /* border: 1px solid; */
+}
+
+.menu > ul {
+    display: flex;
+    list-style-type: none;
+    /* margin: 0px; */
+    /* padding: 0px; */
+    width: 100%;
+    justify-content: space-between;
+    font-size: 0.8em;
+}
+
+.menu > ul > li > a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu > ul > li > a:hover{
+    color: #a78faa;
+
+}
+.menu > ul:last-of-type{
+    padding-bottom: 8px;
+}
+/* hamburger menu */
+.menu-toggle{
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: #a78faa;
+    border-radius: 3px;
+    display: none;
+
+}
+
+/* responsive breakpoint */
+/* ukuran tablet */
+@media only screen and (max-width: 768px) {
+    nav {
+        flex-direction: wrap;
+    }
+    .menu > ul {
+        flex-direction: column;
+    }
+    .menu-toggle span {
+        display: flex;
+    }
+    .menu-toggle{
+        display: flex;
+    }
+    .menu > ul.hidden{
+        display: none;
+    }
+}
+/* ukuran mobbile */
+/* @media screen and (max-width: 576px) {
+    .menu > ul {
+        width: 40%;
+    }
+    .menu > ul {
+        display: none;
+    }
+    .menu-toggle span {
+        display: flex;
+    }
+} */
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo > img {
+    height: 45px;
+}
+
+/*
+* hero / jumbotron
+*/
+
+header {
+    /* background: url("pexels-fwstudio-132204.jpg") ; */
+    height: 100vh;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    font-family: 'CARTOON FREE', sans-serif;
+                                                
+    /* font-family: "Kanit", sans-serif; */
+    letter-spacing: 1.5px;
+    /* text-shadow: 0 0 4px #000; */
+    -webkit-text-stroke: 0.6px #453347;
+}
+
+.bg-video{
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.header-opacity {
+    background-color: #1B262C;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header-jumbotron {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header-jumbotron > h4 {
+    color: #fff;
+    font-size: 3rem;
+    margin: 0px;
+    padding: 0px;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px #453347;
+}
+
+.header-jumbotron > h5 {
+    color: #fff;
+    margin: 0px;
+    padding: 0px;
+    font-size: 2rem;
+    line-height: 2.3rem;
+    -webkit-text-stroke: 0.6px #453347;
+}
+.header-jumbotron > h1 {
+    color: #fff;
+    margin: 10px;
+    padding: 20px;
+    font-size: 2rem;
+    line-height: 2.3rem;
+    -webkit-text-stroke: 0.6px #453347;
+}
+/* header, footer {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 10px 0;
+} */
+
+/* section {
+    margin: 20px 0;
+}
+
+/* Responsiveness */
+/* @media (max-width: 768px) {
+    /* Gaya untuk layar yang lebih kecil */
+/* } */
